@@ -81,3 +81,11 @@ int append(Process *root, Process *new) {
 	}
 	return 0;
 }
+void deleteAll(Process *root) {
+	while(root != NULL) {
+		Process *tmp = root;
+		root = root->next;
+		free(tmp);
+		tmp = NULL;
+	}
+}

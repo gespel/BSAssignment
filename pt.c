@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
 		}
 	}
 	printAll(root);
-	//printf("%d %d %d\n", root->next->prev->PID, root->next->PID, root->next->next->PID);
-	//printf("%d %d %d", root->PID, root->next->prev->PID, root->next->next->prev->prev->PID);
+	printf("\n");
+	deleteAll(root);
 	return 0;
 }
